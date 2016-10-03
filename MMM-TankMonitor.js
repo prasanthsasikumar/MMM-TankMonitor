@@ -8,7 +8,11 @@
 Module.register("MMM-TankMonitor", {
 
   defaults: {
-    refreshInterval: 1000, //Time before successive readings
+    echoPin: 17,
+    triggerPin: 18,
+    timeout: 750,
+    delay: 600, //Time before successive readings
+    rate: 5,
     tanks: [{
       label: "Tank 1",
       value: 50,
@@ -72,6 +76,10 @@ Module.register("MMM-TankMonitor", {
   },
 
   socketNotificationReceived: function(notification, payload) {
-    if (notification === "DATA") {}
+    if (notification === "DATA") {
+      this.config.tanks[0].value = payload;
+      console.log(this.config.tanks[0].value);
+      this.updateTanks();
+    }
   }
 });
