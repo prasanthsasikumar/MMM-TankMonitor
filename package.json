@@ -1,0 +1,29 @@
+{
+  "name": "mmm-tankMonitor",
+  "version": "0.1.0",
+  "description": "Show the water level using ultra sonic sensors - SRF 04",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasanthsasikumar/MMM-TankMonitor.git"
+  },
+  "keywords": [
+    "Magic",
+    "Mirror",
+    "Module",
+    "Water",
+    "level",
+    "monitor",
+    "Sensor"
+  ],
+  "author": "Prasanth Sasikumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prasanthsasikumar/MMM-TankMonitor/issues"
+  },
+  "homepage": "https://github.com/prasanthsasikumar/MMM-TankMonitor#readme",
+  "devDependencies": {}
+}
